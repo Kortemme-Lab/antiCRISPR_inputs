@@ -38,7 +38,7 @@ function repack_cas9 () {
         -out:suffix _repack/$2                                              \
         -out:no_nstruct_label                                               \
         -out:overwrite                                                      \
-        -packing:resfile repack_and_e38                                     \
+        -packing:resfile eqr_resfile                                        \
         -packing:ex1                                                        \
         -packing:ex2                                                        \
         -packing:use_input_sc                                               #
