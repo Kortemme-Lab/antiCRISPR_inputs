@@ -50,7 +50,7 @@ function score_cas9_models () {
         -in:file:s                                                          \
             $STRUCTS/*.pdb                                                  \
             $STRUCTS/$1/*.pdb                                               \
-        -in:file:native $STRUCTS/1qjg_clean.pdb                             \
+        -in:file:native $STRUCTS/5vw1.pdb                             \
         -out:file:scorefile $1/score.tab                                    \
         -out:file:scorefile_format json                                     #
 }
