@@ -42,7 +42,7 @@ def pick_best_pdb(dir):
 
 
 if __name__ == '__main__':
-    pick_best_pdb('5vw1_clean_relax')
+    pick_best_pdb('5vw1_repack_relax')
 
 
 
