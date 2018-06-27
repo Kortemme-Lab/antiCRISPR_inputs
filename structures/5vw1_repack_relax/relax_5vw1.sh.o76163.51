@@ -1,0 +1,505 @@
+id27
+Host: id27
+Date: Tue Jun 26 12:13:40 PDT 2018
+Directory: /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures
+Command: SGE_TASK_ID=51 /var/spool/sge/qb3cell/id27/job_scripts/76163 
+core.init: Checking for fconfig files in pwd and ./rosetta/flags 
+core.init: Rosetta version: 2018.15.post.dev+167.ckrivacic.loopmodelerrampconstraints.3215ca1 3215ca1c097c91e4ca53f09e5d01365271eed0af git@github.com:RosettaCommons/main.git 2018-04-12T11:44:01
+core.init: command: /netapp/home/krivacic/rosetta/source/bin/relax.linuxgccrelease -in:file:s /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures/5vw1_repack.pdb -out:suffix _relax/51 -out:no_nstruct_label -out:overwrite -relax:constrain_relax_to_start_coords -relax:coord_constrain_sidechains -relax:ramp_constraints false -packing:ex1 -packing:ex2 -packing:use_input_sc -packing:flip_HNQ -packing:no_optH false
+core.init: 'RNG device' seed mode, using '/dev/urandom', seed=-37589753 seed_offset=0 real_seed=-37589753
+core.init.random: RandomGenerator:init: Normal mode, seed=-37589753 RG_type=mt19937
+core.init: Resolved executable path: /netapp/home/krivacic/rosetta/source/build/src/release/linux/2.6/64/x86/gcc/4.4/default/relax.default.linuxgccrelease
+core.init: Looking for database based on location of executable: /netapp/home/krivacic/rosetta/database/
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+core.scoring.etable: Starting energy table calculation
+core.scoring.etable: smooth_etable: changing atr/rep split to bottom of energy well
+core.scoring.etable: smooth_etable: spline smoothing lj etables (maxdis = 6)
+core.scoring.etable: smooth_etable: spline smoothing solvation etables (max_dis = 6)
+core.scoring.etable: Finished calculating energy tables.
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBPoly1D.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBFadeIntervals.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/HBEval.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/DonStrength.csv
+basic.io.database: Database file opened: scoring/score_functions/hbonds/ref2015_params/AccStrength.csv
+core.chemical.GlobalResidueTypeSet: Finished initializing fa_standard residue type set.  Created 602 residue types
+core.chemical.GlobalResidueTypeSet: Total time to initialize 1.38 seconds.
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/all.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/rama/fd/prepro.ramaProb
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.all.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.gly.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.pro.txt
+basic.io.database: Database file opened: scoring/score_functions/omega/omega_ppdep.valile.txt
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/P_AA_n
+core.scoring.P_AA: shapovalov_lib::shap_p_aa_pp_smooth_level of 1( aka low_smooth ) got activated.
+basic.io.database: Database file opened: scoring/score_functions/P_AA_pp/shapovalov/10deg/kappa131/a20.prop
+protocols.relax.FastRelax: ================== Using default script - no constraint ramping ==================
+protocols.jd2.PDBJobInputter: Instantiate PDBJobInputter
+protocols.jd2.PDBJobInputter: PDBJobInputter::fill_jobs
+protocols.jd2.PDBJobInputter: pushed /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures/5vw1_repack.pdb nstruct index 1
+protocols.evaluation.ChiWellRmsdEvaluatorCreator: Evaluation Creator active ... 
+protocols.jd2.PDBJobInputter: PDBJobInputter::pose_from_job
+protocols.jd2.PDBJobInputter: filling pose from PDB /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures/5vw1_repack.pdb
+core.import_pose.import_pose: File '/netapp/home/krivacic/PIP/antiCRISPR_inputs/structures/5vw1_repack.pdb' automatically determined to be of type PDB
+core.chemical.GlobalResidueTypeSet: Loading 'PEG' from the PDB components dictionary for residue type 'pdb_PEG'
+core.chemical.GlobalResidueTypeSet: Loading 'PG4' from the PDB components dictionary for residue type 'pdb_PG4'
+core.chemical.GlobalResidueTypeSet: Loading 'EDO' from the PDB components dictionary for residue type 'pdb_EDO'
+core.scoring.ScoreFunctionFactory: SCOREFUNCTION: ref2015
+basic.io.database: Database file opened: scoring/score_functions/elec_cp_reps.dat
+core.scoring.elec.util: Read 40 countpair representative atoms
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib_fixes_enable option is true.
+core.pack.dunbrack.RotamerLibrary: shapovalov_lib::shap_dun10_smooth_level of 1( aka lowest_smooth ) got activated.
+core.pack.dunbrack.RotamerLibrary: Binary rotamer library selected: /netapp/home/krivacic/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin
+core.pack.dunbrack.RotamerLibrary: Using Dunbrack library binary file '/netapp/home/krivacic/rosetta/database/rotamer/shapovalov/StpDwn_0-0-0/Dunbrack10.lib.bin'.
+core.pack.dunbrack.RotamerLibrary: Dunbrack 2010 library took 0.31 seconds to load from binary
+core.pack.task: Packer task: initialize from command line() 
+core.pack.pack_rotamers: built 4521 rotamers at 1527 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 6216280 bytes
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.015 chino=  2 position:    1 SER:NtermProteinFull SER:NtermProteinFull
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.009 chino=  2 position:    7 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.983 chino=  2 position:   14 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.005 chino=  2 position:   16 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.991 chino=  2 position:   23 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.972 chino=  2 position:   30 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.008 chino=  2 position:   39 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.001 chino=  2 position:   43 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.997 chino=  2 position:   56 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.984 chino=  2 position:   59 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    40.010 chino=  2 position:   63 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.018 chino=  2 position:   68 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.002 chino=  2 position:   74 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.004 chino=  2 position:   81 CYS CYS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.999 chino=  3 position:   82 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.997 chino=  2 position:   88 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    39.980 chino=  2 position:   97 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.985 chino=  2 position:  105 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  114 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.980 chino=  3 position:  129 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.992 chino=  3 position:  133 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.973 chino=  2 position:  135 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.984 chino=  2 position:  146 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.986 chino=  2 position:  147 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.005 chino=  2 position:  180 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.005 chino=  2 position:  192 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.026 chino=  2 position:  205 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.997 chino=  2 position:  214 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.005 chino=  2 position:  218 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.994 chino=  2 position:  220 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.994 chino=  2 position:  246 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.001 chino=  2 position:  250 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.008 chino=  2 position:  255 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.036 chino=  2 position:  268 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.975 chino=  2 position:  271 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.015 chino=  2 position:  298 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.996 chino=  2 position:  304 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.027 chino=  2 position:  311 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.995 chino=  2 position:  314 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.037 chino=  2 position:  319 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.005 chino=  2 position:  321 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.997 chino=  3 position:  326 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.000 chino=  2 position:  334 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  355 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.012 chino=  2 position:  356 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.999 chino=  3 position:  360 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.998 chino=  2 position:  369 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.985 chino=  3 position:  374 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.004 chino=  2 position:  387 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.011 chino=  2 position:  405 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.018 chino=  2 position:  410 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  413 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.978 chino=  2 position:  446 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.967 chino=  3 position:  451 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.993 chino=  3 position:  452 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.008 chino=  2 position:  461 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.988 chino=  2 position:  467 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.983 chino=  2 position:  470 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.025 chino=  2 position:  473 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.995 chino=  2 position:  475 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.983 chino=  2 position:  488 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.010 chino=  2 position:  491 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.009 chino=  2 position:  497 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.008 chino=  2 position:  513 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.978 chino=  2 position:  520 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.033 chino=  2 position:  526 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.989 chino=  3 position:  530 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.974 chino=  2 position:  532 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.002 chino=  2 position:  542 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.012 chino=  2 position:  556 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    39.978 chino=  2 position:  561 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.974 chino=  3 position:  569 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.001 chino=  2 position:  575 CYS CYS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.978 chino=  2 position:  578 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.024 chino=  2 position:  582 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.011 chino=  2 position:  591 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.976 chino=  2 position:  594 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.971 chino=  3 position:  595 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.021 chino=  2 position:  623 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.977 chino=  2 position:  625 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.998 chino=  2 position:  639 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.993 chino=  3 position:  657 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.007 chino=  2 position:  658 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.018 chino=  2 position:  664 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.008 chino=  2 position:  676 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.998 chino=  2 position:  679 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.012 chino=  2 position:  686 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  691 ASN ASN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    39.981 chino=  2 position:  702 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.972 chino=  2 position:  704 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  710 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.011 chino=  2 position:  715 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.007 chino=  2 position:  717 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  719 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.974 chino=  2 position:  728 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.998 chino=  2 position:  738 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.973 chino=  2 position:  767 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.998 chino=  2 position:  768 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.016 chino=  2 position:  774 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.010 chino=  2 position:  790 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  800 ASN ASN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.004 chino=  2 position:  801 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  804 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.987 chino=  3 position:  809 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.962 chino=  3 position:  812 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.998 chino=  2 position:  831 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.986 chino=  3 position:  833 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  841 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.033 chino=  2 position:  842 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.981 chino=  2 position:  848 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.000 chino=  2 position:  855 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.028 chino=  2 position:  857 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.993 chino=  2 position:  864 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.012 chino=  2 position:  869 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.994 chino=  3 position:  879 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.018 chino=  2 position:  890 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  891 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.000 chino=  2 position:  898 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.992 chino=  2 position:  906 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.984 chino=  2 position:  921 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position:  923 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    39.979 chino=  2 position:  925 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    40.011 chino=  2 position:  934 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    40.017 chino=  2 position:  938 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.998 chino=  3 position:  940 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  943 ASN ASN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.988 chino=  2 position:  954 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.012 chino=  2 position:  957 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.036 chino=  2 position:  961 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position:  980 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.994 chino=  3 position:  985 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.020 chino=  2 position:  992 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.004 chino=  2 position: 1003 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.999 chino=  3 position: 1010 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.999 chino=  2 position: 1022 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.979 chino=  2 position: 1027 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.970 chino=  3 position: 1033 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.964 chino=  2 position: 1034 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.003 chino=  2 position: 1042 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.016 chino=  2 position: 1045 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.977 chino=  2 position: 1059 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.002 chino=  2 position: 1063 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.998 chino=  2 position: 1076 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    40.015 chino=  2 position: 1082 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.971 chino=  2 position: 1092 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position: 1095 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.009 chino=  2 position: 1096 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.989 chino=  2 position: 1100 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.974 chino=  2 position: 1103 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.967 chino=  2 position: 1110 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.987 chino=  2 position: 1130 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.977 chino=  2 position: 1132 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.995 chino=  2 position: 1136 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.033 chino=  2 position: 1148 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.009 chino=  2 position: 1153 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.980 chino=  2 position: 1161 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   139.988 chino=  2 position: 1166 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.994 chino=  2 position: 1167 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.989 chino=  3 position: 1181 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.968 chino=  2 position: 1196 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   140.004 chino=  2 position: 1210 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   159.997 chino=  2 position: 1224 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.995 chino=  3 position: 1226 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.992 chino=  3 position: 1231 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.009 chino=  2 position: 1234 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.975 chino=  3 position: 1236 TYR TYR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.032 chino=  2 position: 1242 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position: 1246 ASN ASN
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position: 1250 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.996 chino=  2 position: 1268 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.994 chino=  2 position: 1271 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.012 chino=  2 position: 1286 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position: 1291 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position: 1305 HIS HIS
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.014 chino=  2 position: 1308 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.021 chino=  2 position: 1310 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  2 position: 1311 ASN ASN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.978 chino=  2 position: 1323 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.008 chino=  2 position: 1324 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.000 chino=  2 position: 1332 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.015 chino=  2 position: 1333 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.981 chino=  2 position: 1345 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.972 chino=  2 position: 1347 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.986 chino=  2 position: 1352 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    80.001 chino=  2 position: 1357 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.068 chino=  1 position: 1363 pdb_PEG pdb_PEG
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.954 chino=  6 position: 1363 pdb_PEG pdb_PEG
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.032 chino=  1 position: 1364 pdb_PEG pdb_PEG
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    20.058 chino=  1 position: 1365 pdb_PG4 pdb_PG4
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.990 chino=  1 position: 1366 pdb_EDO pdb_EDO
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.958 chino=  3 position: 1366 pdb_EDO pdb_EDO
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   160.035 chino=  1 position: 1441 pdb_PG4 pdb_PG4
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.979 chino= 12 position: 1441 pdb_PG4 pdb_PG4
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.027 chino=  2 position: 1458 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.990 chino=  2 position: 1462 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   179.969 chino=  2 position: 1464 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    60.006 chino=  2 position: 1466 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    99.990 chino=  2 position: 1468 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.992 chino=  2 position: 1470 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   100.001 chino=  2 position: 1486 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    79.995 chino=  2 position: 1488 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   119.991 chino=  2 position: 1492 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=   120.001 chino=  2 position: 1499 SER SER
+core.io.pdb.file_data: [ WARNING ] OPT-H: heavyatom chi angle change: chidev=   180.000 chino=  3 position: 1507 GLN GLN
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    59.992 chino=  2 position: 1521 THR THR
+core.io.pdb.file_data: [ WARNING ] OPT-H: proton chi angle change: chidev=    19.986 chino=  2 position: 1523 THR THR
+protocols.relax.FastRelax: CMD: repeat  1859.81  0  0  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 83434 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 421106896 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2533.47  0.10487  0.10487  0.011
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 71566 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 281522168 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2408.74  0.0875624  0.0875624  0.1375
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 67175 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 239806384 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2183.76  0.10061  0.10061  0.3025
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 64867 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 218793588 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -1747.8  0.100661  0.100661  0.55
+protocols.relax.FastRelax: MRP: 0  -1747.8  -1747.8  0.100661  0.100661  
+protocols.relax.FastRelax: CMD: accept_to_best  -1747.8  0.100661  0.100661  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -1747.8  0.100661  0.100661  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 82925 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 412643664 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -3139.72  0.104823  0.104823  0.011
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 71750 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 279495720 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2739.27  0.100076  0.100076  0.1375
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 67531 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 242170464 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2351.36  0.101947  0.101947  0.3025
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 64714 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 218435644 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -1848.42  0.105276  0.105276  0.55
+protocols.relax.FastRelax: MRP: 1  -1848.42  -1848.42  0.105276  0.105276  
+protocols.relax.FastRelax: CMD: accept_to_best  -1848.42  0.105276  0.105276  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -1848.42  0.105276  0.105276  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 83111 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 412600672 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -3186.93  0.107433  0.107433  0.011
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 71817 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 279898932 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2787.65  0.102999  0.102999  0.1375
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 67402 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 240871008 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2382.44  0.103368  0.103368  0.3025
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 64705 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 218241668 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -1868.87  0.106285  0.106285  0.55
+protocols.relax.FastRelax: MRP: 2  -1868.87  -1868.87  0.106285  0.106285  
+protocols.relax.FastRelax: CMD: accept_to_best  -1868.87  0.106285  0.106285  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -1868.87  0.106285  0.106285  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 83233 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 415465964 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -3204.72  0.108238  0.108238  0.011
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 71515 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 277478856 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2801.51  0.103482  0.103482  0.1375
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 67362 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 240770636 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2393.39  0.103786  0.103786  0.3025
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 64728 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 218596444 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -1877.09  0.106576  0.106576  0.55
+protocols.relax.FastRelax: MRP: 3  -1877.09  -1877.09  0.106576  0.106576  
+protocols.relax.FastRelax: CMD: accept_to_best  -1877.09  0.106576  0.106576  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -1877.09  0.106576  0.106576  0.55
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 83054 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 414130372 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -3213.34  0.107898  0.107898  0.011
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 71713 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 278804028 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2807.61  0.103769  0.103769  0.1375
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 67450 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 241745512 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -2398.7  0.104053  0.104053  0.3025
+core.pack.task: Packer task: initialize from command line() 
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PEG
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_EDO
+core.pack.rotamer_set.RotamerSet_: Using simple Rotamer generation logic for pdb_PG4
+core.pack.pack_rotamers: built 64728 rotamers at 1528 positions.
+core.pack.interaction_graph.interaction_graph_factory: Instantiating DensePDInteractionGraph
+core.pack.interaction_graph.interaction_graph_factory: IG: 218516740 bytes
+core.optimization.Minimizer: [ WARNING ] LBFGS MAX CYCLES 2000 EXCEEDED, BUT FUNC NOT CONVERGED!
+protocols.relax.FastRelax: CMD: ramp_repack_min  -1881.08  0.106922  0.106922  0.55
+protocols.relax.FastRelax: MRP: 4  -1881.08  -1881.08  0.106922  0.106922  
+protocols.relax.FastRelax: CMD: accept_to_best  -1881.08  0.106922  0.106922  0.55
+protocols.relax.FastRelax: CMD: endrepeat  -1881.08  0.106922  0.106922  0.55
+protocols::checkpoint: Deleting checkpoints of FastRelax
+protocols.jd2.JobDistributor: 5vw1_repack_relax/51 reported success in 50102 seconds
+protocols.jd2.JobDistributor: no more batches to process... 
+protocols.jd2.JobDistributor: 1 jobs considered, 1 jobs attempted in 50104 seconds
+protocols::checkpoint: Deleting checkpoints of FastRelax
