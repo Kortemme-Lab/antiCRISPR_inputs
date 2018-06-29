@@ -58,11 +58,12 @@ function score_cas9_models () {
 function minimize_cas9_models () {
 
     header
-    $BIN/minimize.$ROSETTA_BUILD
+    $BIN/minimize.$ROSETTA_BUILD                                            \
         -in:file:s $STRUCTS/$1                                              \
         -out:suffix _repack_relax_repack_minimize/$2                        \
-        -out:no_nstruct_label
-        -out:overwrite
-        -packing
+        -out:no_nstruct_label                                               \
+        -out:overwrite                                                      \
+        -out:suffix _minimized                                              \
+        -packing                                                            #
 
 }
