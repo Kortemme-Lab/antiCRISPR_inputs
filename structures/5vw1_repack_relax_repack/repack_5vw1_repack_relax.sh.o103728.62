@@ -1,0 +1,4 @@
+Host: ih57
+Date: Thu Jun 28 17:41:48 PDT 2018
+Directory: /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures
+Command: SGE_TASK_ID=62 /var/spool/sge/qb3cell/ih57/job_scripts/103728 

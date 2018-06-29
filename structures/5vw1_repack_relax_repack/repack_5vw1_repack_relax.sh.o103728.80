@@ -1,0 +1,4 @@
+Host: id22
+Date: Thu Jun 28 17:55:09 PDT 2018
+Directory: /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures
+Command: SGE_TASK_ID=80 /var/spool/sge/qb3cell/id22/job_scripts/103728 

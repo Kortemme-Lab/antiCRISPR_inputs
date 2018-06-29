@@ -5,10 +5,10 @@ set -euo pipefail
 #$ -cwd
 #$ -o 5vw1_repack_relax_repack
 #$ -j y
-#$ -l mem_free=1G
+#$ -l mem_free=4G
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
-#$ -l h_rt=12:00:00
+#$ -l h_rt=24:00:00
 #$ -t 1-100
 
 source rosetta.sh

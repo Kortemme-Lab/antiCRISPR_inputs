@@ -38,7 +38,7 @@ function repack_cas9 () {
         -out:suffix _repack/$2                                              \
         -out:no_nstruct_label                                               \
         -out:overwrite                                                      \
-        -packing:resfile eqr_resfile                                        \
+        -resfile default_resfile                                            \
         -packing:ex1                                                        \
         -packing:ex2                                                        \
         -packing:use_input_sc                                               #
@@ -53,4 +53,16 @@ function score_cas9_models () {
         -in:file:native $STRUCTS/5vw1.pdb                             \
         -out:file:scorefile $1/score.tab                                    \
         -out:file:scorefile_format json                                     #
+}
+
+function minimize_cas9_models () {
+
+    header
+    $BIN/minimize.$ROSETTA_BUILD
+        -in:file:s $STRUCTS/$1                                              \
+        -out:suffix _repack_relax_repack_minimize/$2                        \
+        -out:no_nstruct_label
+        -out:overwrite
+        -packing
+
 }

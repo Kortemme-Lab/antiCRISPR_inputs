@@ -1,0 +1,4 @@
+Host: ih9
+Date: Thu Jun 28 17:38:46 PDT 2018
+Directory: /netapp/home/krivacic/PIP/antiCRISPR_inputs/structures
+Command: SGE_TASK_ID=36 /var/spool/sge/qb3cell/ih9/job_scripts/103728 
