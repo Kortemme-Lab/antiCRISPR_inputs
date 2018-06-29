@@ -3,12 +3,13 @@ set -euo pipefail
 
 #$ -S /bin/bash
 #$ -cwd
-#$ -o 1qjg_clean_relax_repack
+#$ -o 5vw1_minimize_o
+#$ -e 5vw1_minimize_e
 #$ -j y
-#$ -l mem_free=1G
+#$ -l mem_free=2G
 #$ -l arch=linux-x64
 #$ -l netapp=1G,scratch=1G
-#$ -l h_rt=12:00:00
+#$ -l h_rt=24:00:00
 #$ -t 1
 
 source rosetta.sh
