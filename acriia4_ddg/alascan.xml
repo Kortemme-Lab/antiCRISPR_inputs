@@ -1,0 +1,15 @@
+<ROSETTASCRIPTS>
+    <SCOREFXNS>
+        <ScoreFunction name="scorefxn" weights="/netapp/home/krivacic/PIP/20180514_res16_loop12_rampcst_lhkic/project_params/scorefxn.wts"/>
+    </SCOREFXNS>
+
+    <FILTERS>
+        <AlaScan name="alascan" scorefxn="scorefxn" jump="2" interface_distance_cutoff="8.0" partner1="1" partner2="1" repeats="10" repack="1"/>
+    </FILTERS>
+
+    <PROTOCOLS>
+        <Add filter_name="alascan" />
+    </PROTOCOLS>
+
+</ROSETTASCRIPTS>
+
