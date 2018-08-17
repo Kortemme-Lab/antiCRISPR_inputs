@@ -4,12 +4,14 @@
     </SCOREFXNS>
 
     <FILTERS>
-        <AlaScan name="alascan" scorefxn="scorefxn" jump="1" interface_distance_cutoff="8.0" partner1="1" partner2="0" repeats="10" repack="1"/>
-        <AlaScan name="alascan_2ndstrand" scorefxn="scorefxn" jump="2" interface_distance_cutoff="8.0" partner1="1" partner2="0" repeats="10" repack="1"/>
+        <AlaScan name="alascan_rna" scorefxn="scorefxn" jump="1" interface_distance_cutoff="8.0" partner1="1" partner2="1" repeats="10" repack="1"/>
+        <AlaScan name="alascan_1ststrand" scorefxn="scorefxn" jump="2" interface_distance_cutoff="8.0" partner1="1" partner2="1" repeats="10" repack="1"/>
+        <AlaScan name="alascan_2ndstrand" scorefxn="scorefxn" jump="3" interface_distance_cutoff="8.0" partner1="1" partner2="1" repeats="10" repack="1"/>
     </FILTERS>
 
     <PROTOCOLS>
-        <Add filter_name="alascan" />
+        <Add filter_name="alascan_rna" />
+        <Add filter_name="alascan_1ststrand" />
         <Add filter_name="alascan_2ndstrand" />
     </PROTOCOLS>
 
